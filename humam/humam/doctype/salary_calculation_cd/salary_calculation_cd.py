@@ -9,15 +9,14 @@ from datetime import datetime
 
 class SalaryCalculationCD(Document):
 	def validate(self):
-		self.date = today()
 
-		date = getdate(self.date)
+		salary_date = getdate(self.salary_date)
 		month_list = ["January","February","March","April","May","June","July","August","September","October","November","December"]
 
 		month = ""
 		for i in range(len(month_list)):
-			if i == (date.month -1):
+			if i == (salary_date.month -1):
 				month = month_list[i]
-				
-		year = date.year
+
+		year = salary_date.year
 		self.payroll_for = month + ", " + str(year)

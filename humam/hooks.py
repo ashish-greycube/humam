@@ -122,6 +122,12 @@ app_license = "mit"
 # ---------------
 # Hook on document methods and events
 
+doc_events = {
+    "Employee": {
+		"validate":"humam.api.calculate_total_salary_of_employee"
+	},
+}
+
 # doc_events = {
 # 	"*": {
 # 		"on_update": "method",

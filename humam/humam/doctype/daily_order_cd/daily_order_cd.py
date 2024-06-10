@@ -8,4 +8,4 @@ from frappe.utils import getdate,flt,cstr,add_days,get_first_day,get_last_day
 
 class DailyOrderCD(Document):
 	def validate(self):
-		self.date = today()
+		pass

@@ -4,7 +4,7 @@
 frappe.ui.form.on("Daily Order CD", {
 	onload: function (frm) {
         if (!frm.doc.date) {
-			frm.set_value("date", frappe.datetime.get_today());
+			frm.set_value("order_date", frappe.datetime.get_today());
 		}
     },
 });

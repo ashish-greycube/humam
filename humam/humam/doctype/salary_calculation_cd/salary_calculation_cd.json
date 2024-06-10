@@ -11,7 +11,7 @@
   "get_employee",
   "create_jv",
   "column_break_faex",
-  "date",
+  "salary_date",
   "salary_calculation_section",
   "salary_calculation_details"
  ],
@@ -19,12 +19,8 @@
   {
    "fieldname": "payroll_for",
    "fieldtype": "Data",
-   "label": "Payroll for"
-  },
-  {
-   "fieldname": "date",
-   "fieldtype": "Date",
-   "label": "Date"
+   "label": "Payroll for",
+   "read_only": 1
   },
   {
    "fieldname": "employee_group",
@@ -35,7 +31,8 @@
   {
    "fieldname": "get_employee",
    "fieldtype": "Button",
-   "label": "Get Employee"
+   "label": "Get Employee",
+   "options": "get_employee"
   },
   {
    "fieldname": "column_break_faex",
@@ -44,7 +41,8 @@
   {
    "fieldname": "create_jv",
    "fieldtype": "Button",
-   "label": "Create JV"
+   "label": "Create JV",
+   "options": "create_jv"
   },
   {
    "fieldname": "salary_calculation_section",
@@ -56,11 +54,16 @@
    "fieldtype": "Table",
    "label": "Salary Calculation Details",
    "options": "Salary Calculation Details CT"
+  },
+  {
+   "fieldname": "salary_date",
+   "fieldtype": "Date",
+   "label": "Date"
   }
  ],
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-10 16:50:29.928451",
+ "modified": "2024-06-10 18:02:55.504830",
  "modified_by": "Administrator",
  "module": "Humam",
  "name": "Salary Calculation CD",

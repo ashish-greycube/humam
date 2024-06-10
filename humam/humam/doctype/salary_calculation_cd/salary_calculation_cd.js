@@ -3,8 +3,8 @@
 
 frappe.ui.form.on("Salary Calculation CD", {
 	onload: function (frm) {
-        if (!frm.doc.date) {
-			frm.set_value("date", frappe.datetime.get_today());
+        if (!frm.doc.salary_date) {
+			frm.set_value("salary_date", frappe.datetime.get_today());
 		}
     }
 });
