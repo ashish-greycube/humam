@@ -1,0 +1,89 @@
+{
+ "charts": [],
+ "content": "[{\"id\":\"bX9djOiTEr\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Humam</span>\",\"col\":12}},{\"id\":\"6rLSJ6Yz0-\",\"type\":\"card\",\"data\":{\"card_name\":\"Humam\",\"col\":4}}]",
+ "creation": "2024-06-10 17:47:45.632815",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "heart",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Humam",
+ "links": [
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Humam",
+   "link_count": 5,
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Card Break"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Salary Calculation",
+   "link_count": 0,
+   "link_to": "Salary Calculation CD",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee",
+   "link_count": 0,
+   "link_to": "Employee",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Daily Order",
+   "link_count": 0,
+   "link_to": "Daily Order CD",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Humam Settings",
+   "link_count": 0,
+   "link_to": "Humam Settings",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  },
+  {
+   "hidden": 0,
+   "is_query_report": 0,
+   "label": "Employee Group",
+   "link_count": 0,
+   "link_to": "Employee Group CD",
+   "link_type": "DocType",
+   "onboard": 0,
+   "type": "Link"
+  }
+ ],
+ "modified": "2024-06-10 17:49:59.571930",
+ "modified_by": "Administrator",
+ "module": "Humam",
+ "name": "Humam",
+ "number_cards": [],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 2.0,
+ "shortcuts": [],
+ "title": "Humam"
+}
