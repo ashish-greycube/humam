@@ -1,0 +1,104 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-06-10 15:47:31.997735",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "company_target",
+  "dabbab_group_order_amount",
+  "salary_debit_account",
+  "salary_credit_account",
+  "order_rate_section_section",
+  "order_slot_1_to_399",
+  "order_slot_400_to_449",
+  "order_slot_more_than_450"
+ ],
+ "fields": [
+  {
+   "default": "450",
+   "fieldname": "company_target",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Company Target",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "dabbab_group_order_amount",
+   "fieldtype": "Int",
+   "in_list_view": 1,
+   "label": "Dabbab Group Order Amount",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary_debit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Salary Debit Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "salary_credit_account",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Salary Credit Account",
+   "options": "Account",
+   "reqd": 1
+  },
+  {
+   "fieldname": "order_rate_section_section",
+   "fieldtype": "Section Break",
+   "label": "Order Rate Section"
+  },
+  {
+   "default": "9",
+   "fieldname": "order_slot_1_to_399",
+   "fieldtype": "Int",
+   "label": "Order slot 1 To 399",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "14",
+   "fieldname": "order_slot_400_to_449",
+   "fieldtype": "Int",
+   "label": "Order slot 400 to 449",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "default": "14",
+   "fieldname": "order_slot_more_than_450",
+   "fieldtype": "Int",
+   "label": "Order slot more than 450",
+   "non_negative": 1,
+   "reqd": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "issingle": 1,
+ "links": [],
+ "modified": "2024-06-10 15:54:17.616303",
+ "modified_by": "Administrator",
+ "module": "Humam",
+ "name": "Humam Settings",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "print": 1,
+   "read": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

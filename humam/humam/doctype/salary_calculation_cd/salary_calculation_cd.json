@@ -1,0 +1,86 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "SC-.#####",
+ "creation": "2024-06-10 15:55:02.724824",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "payroll_for",
+  "employee_group",
+  "get_employee",
+  "create_jv",
+  "column_break_faex",
+  "date",
+  "salary_calculation_section",
+  "salary_calculation_details"
+ ],
+ "fields": [
+  {
+   "fieldname": "payroll_for",
+   "fieldtype": "Data",
+   "label": "Payroll for"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "label": "Date"
+  },
+  {
+   "fieldname": "employee_group",
+   "fieldtype": "Link",
+   "label": "Employee Group",
+   "options": "Employee Group CD"
+  },
+  {
+   "fieldname": "get_employee",
+   "fieldtype": "Button",
+   "label": "Get Employee"
+  },
+  {
+   "fieldname": "column_break_faex",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "create_jv",
+   "fieldtype": "Button",
+   "label": "Create JV"
+  },
+  {
+   "fieldname": "salary_calculation_section",
+   "fieldtype": "Section Break",
+   "label": "Salary Calculation"
+  },
+  {
+   "fieldname": "salary_calculation_details",
+   "fieldtype": "Table",
+   "label": "Salary Calculation Details",
+   "options": "Salary Calculation Details CT"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-10 16:50:29.928451",
+ "modified_by": "Administrator",
+ "module": "Humam",
+ "name": "Salary Calculation CD",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
