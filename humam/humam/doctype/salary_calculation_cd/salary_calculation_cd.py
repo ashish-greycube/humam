@@ -93,7 +93,7 @@ class SalaryCalculationCD(Document):
 					salary_details.salary=salary_components.custom_total_salary
 					salary_details.calculated_salary=flt(daily_order.no_of_orders*humam_doc.order_slot_1_to_399)
 					print('salary_details.calculated_salary',salary_details.calculated_salary)
-					salary_details.deduction= (salary_components.custom_housing_cost if salary_components.custom_home_allowance_required=='Yes' else 0) - (salary_components.custom_transportation_cost if salary_components.custom_transportation_required=='Yes' else 0)
+					salary_details.deduction= (salary_components.custom_housing_cost if salary_components.custom_home_allowance_required=='Yes' else 0) + (salary_components.custom_transportation_cost if salary_components.custom_transportation_required=='Yes' else 0)
 					salary_details.extra=0
 					salary_details.to_be_paid=flt(salary_details.calculated_salary-salary_details.deduction+salary_details.extra)
 				elif daily_order.no_of_orders>=400 and daily_order.no_of_orders<=449:
