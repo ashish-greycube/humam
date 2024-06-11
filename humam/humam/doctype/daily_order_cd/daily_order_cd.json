@@ -13,7 +13,8 @@
   "attachment",
   "column_break_omxu",
   "order_date",
-  "customer"
+  "customer",
+  "amended_from"
  ],
  "fields": [
   {
@@ -49,6 +50,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "default": "Today",
    "fieldname": "order_date",
    "fieldtype": "Date",
    "label": "Date",
@@ -57,9 +59,9 @@
   {
    "fetch_from": "employee.custom_employee_group_type",
    "fieldname": "employee_group",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "label": "Employee Group",
-   "options": "Employee Group CD",
+   "options": "\nCompany\nOutside\nDabbab",
    "read_only": 1
   },
   {
@@ -68,11 +70,23 @@
    "fieldtype": "Data",
    "label": "Employee Name",
    "read_only": 1
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Daily Order CD",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
   }
  ],
  "index_web_pages_for_search": 1,
+ "is_submittable": 1,
  "links": [],
- "modified": "2024-06-10 18:10:29.689857",
+ "make_attachments_public": 1,
+ "modified": "2024-06-11 09:46:03.461032",
  "modified_by": "Administrator",
  "module": "Humam",
  "name": "Daily Order CD",

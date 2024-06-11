@@ -6,14 +6,19 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "payroll_for",
+  "salary_date",
   "employee_group",
   "get_employee",
-  "create_jv",
   "column_break_faex",
-  "salary_date",
+  "payroll_for",
+  "journal_entry",
+  "create_jv",
   "salary_calculation_section",
-  "salary_calculation_details"
+  "salary_calculation_details",
+  "section_break_rgxc",
+  "filler",
+  "column_break_igdc",
+  "total_salary_to_pay"
  ],
  "fields": [
   {
@@ -24,9 +29,9 @@
   },
   {
    "fieldname": "employee_group",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "label": "Employee Group",
-   "options": "Employee Group CD"
+   "options": "\nCompany\nOutside\nDabbab"
   },
   {
    "fieldname": "get_employee",
@@ -56,14 +61,43 @@
    "options": "Salary Calculation Details CT"
   },
   {
+   "default": "Today",
    "fieldname": "salary_date",
    "fieldtype": "Date",
-   "label": "Date"
+   "label": "Salary Date"
+  },
+  {
+   "fieldname": "journal_entry",
+   "fieldtype": "Link",
+   "label": "Journal Entry",
+   "options": "Journal Entry",
+   "read_only": 1
+  },
+  {
+   "fieldname": "section_break_rgxc",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_igdc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "total_salary_to_pay",
+   "fieldtype": "Currency",
+   "label": "Total Salary To Pay",
+   "read_only": 1
+  },
+  {
+   "fieldname": "filler",
+   "fieldtype": "Data",
+   "hidden": 1,
+   "label": "filler"
   }
  ],
+ "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-10 18:02:55.504830",
+ "modified": "2024-06-11 09:45:29.871668",
  "modified_by": "Administrator",
  "module": "Humam",
  "name": "Salary Calculation CD",

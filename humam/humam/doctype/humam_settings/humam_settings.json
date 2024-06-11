@@ -37,6 +37,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Salary Debit Account",
+   "link_filters": "[[\"Account\",\"account_type\",\"=\",\"Expense Account\"]]",
    "options": "Account",
    "reqd": 1
   },
@@ -45,6 +46,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Salary Credit Account",
+   "link_filters": "[[\"Account\",\"account_type\",\"=\",\"Payable\"]]",
    "options": "Account",
    "reqd": 1
   },
@@ -81,7 +83,7 @@
  "index_web_pages_for_search": 1,
  "issingle": 1,
  "links": [],
- "modified": "2024-06-10 15:54:17.616303",
+ "modified": "2024-06-11 09:35:23.070096",
  "modified_by": "Administrator",
  "module": "Humam",
  "name": "Humam Settings",

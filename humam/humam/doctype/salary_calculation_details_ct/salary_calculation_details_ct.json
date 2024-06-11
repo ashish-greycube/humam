@@ -10,6 +10,8 @@
   "employee_group",
   "no_of_orders",
   "salary",
+  "column_break_1rmk",
+  "calculated_salary",
   "deduction",
   "extra",
   "to_be_paid"
@@ -28,10 +30,10 @@
    "columns": 2,
    "fetch_from": "employee.custom_employee_group_type",
    "fieldname": "employee_group",
-   "fieldtype": "Link",
+   "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Employee Group",
-   "options": "Employee Group CD"
+   "options": "\nCompany\nOutside\nDabbab"
   },
   {
    "columns": 1,
@@ -44,7 +46,6 @@
    "columns": 1,
    "fieldname": "salary",
    "fieldtype": "Currency",
-   "in_list_view": 1,
    "label": "Salary"
   },
   {
@@ -67,12 +68,23 @@
    "fieldtype": "Currency",
    "in_list_view": 1,
    "label": "To be Paid"
+  },
+  {
+   "columns": 1,
+   "fieldname": "calculated_salary",
+   "fieldtype": "Currency",
+   "in_list_view": 1,
+   "label": "Calculated Salary"
+  },
+  {
+   "fieldname": "column_break_1rmk",
+   "fieldtype": "Column Break"
   }
  ],
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2024-06-10 17:08:16.016186",
+ "modified": "2024-06-11 09:43:49.732816",
  "modified_by": "Administrator",
  "module": "Humam",
  "name": "Salary Calculation Details CT",

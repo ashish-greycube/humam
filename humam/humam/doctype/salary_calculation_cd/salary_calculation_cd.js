@@ -2,9 +2,28 @@
 // For license information, please see license.txt
 
 frappe.ui.form.on("Salary Calculation CD", {
-	onload: function (frm) {
-        if (!frm.doc.salary_date) {
-			frm.set_value("salary_date", frappe.datetime.get_today());
-		}
-    }
-});
+		get_employee:function (frm) {
+			frm.call({
+				doc: frm.doc,
+				method: "get_employee",
+				freeze: true,
+				callback: (r) => {
+					if (!r.exc) {
+						frm.save();
+					}
+				},
+			});
+		},
+		create_jv:function (frm) {
+			frm.call({
+				doc: frm.doc,
+				method: "create_jv",
+				freeze: true,
+				callback: (r) => {
+					if (!r.exc) {
+						frm.save();
+					}
+				},
+			});
+		}		
+    });
