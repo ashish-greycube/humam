@@ -126,6 +126,9 @@ doc_events = {
     "Employee": {
 		"validate":"humam.api.calculate_total_salary_of_employee"
 	},
+    "Journal Entry": {
+        "on_cancel":"humam.api.unlink_salary_calculation_on_cancel_on_journal_entry"
+	}
 }
 
 # doc_events = {

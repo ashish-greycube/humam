@@ -44,6 +44,7 @@
    "fieldtype": "Column Break"
   },
   {
+   "depends_on": "eval:(doc.journal_entry == '' || doc.journal_entry == undefined) && (doc.salary_calculation_details).length > 0",
    "fieldname": "create_jv",
    "fieldtype": "Button",
    "label": "Create JV",
@@ -97,7 +98,7 @@
  "hide_toolbar": 1,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2024-06-11 09:45:29.871668",
+ "modified": "2024-06-11 15:22:23.748905",
  "modified_by": "Administrator",
  "module": "Humam",
  "name": "Salary Calculation CD",

@@ -23,7 +23,7 @@ class SalaryCalculationCD(Document):
 
 	@frappe.whitelist()
 	def create_jv(self):
-		return
+		# return
 		if len(self.salary_calculation_details)>0 and not self.journal_entry:
 			company = get_default_company()
 			humam_doc = frappe.get_doc('Humam Settings', 'Humam Settings')
@@ -57,8 +57,9 @@ class SalaryCalculationCD(Document):
 			je.set("accounts",accounts)
 			je.run_method('set_missing_values')
 			je.save(ignore_permissions=True)
-			self.journal_entry=je.name
-			return		
+			# self.journal_entry=je.name
+			frappe.db.set_value('Salary Calculation CD', self.name, 'journal_entry', je.name)
+			# self.save()	
 		else:
 			return	
 	@frappe.whitelist()

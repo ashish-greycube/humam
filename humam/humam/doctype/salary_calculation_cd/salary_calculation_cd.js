@@ -21,7 +21,8 @@ frappe.ui.form.on("Salary Calculation CD", {
 				freeze: true,
 				callback: (r) => {
 					if (!r.exc) {
-						frm.save();
+						// frm.reload()
+						frm.refresh_field("journal_entry")
 					}
 				},
 			});
