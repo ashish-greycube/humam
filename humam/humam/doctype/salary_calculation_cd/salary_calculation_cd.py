@@ -6,6 +6,7 @@ from frappe.model.document import Document
 from frappe.utils import today,getdate,flt,cstr,add_days,get_first_day,get_last_day,nowdate
 from datetime import datetime
 from erpnext import get_default_company
+from frappe.utils import get_link_to_form
 
 class SalaryCalculationCD(Document):
 	def validate(self):
@@ -57,8 +58,11 @@ class SalaryCalculationCD(Document):
 			je.set("accounts",accounts)
 			je.run_method('set_missing_values')
 			je.save(ignore_permissions=True)
+			# je_link = get_link_to_form('Journal Entry', je.name)
 			# self.journal_entry=je.name
-			frappe.db.set_value('Salary Calculation CD', self.name, 'journal_entry', je.name)
+			url_to_jv='/app/journal-entry/{0}'.format(je.name)
+			print(url_to_jv)
+			frappe.db.set_value('Salary Calculation CD', self.name, 'journal_entry',url_to_jv)
 			# self.save()	
 		else:
 			return	
